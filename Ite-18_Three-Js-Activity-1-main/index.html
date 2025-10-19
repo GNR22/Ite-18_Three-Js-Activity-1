@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Jump Game</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <canvas class="webgl"></canvas>
+
+    <!-- Start Screen -->
+    <div id="startScreen" class="overlay">
+        <div class="panel">
+            <h1> Donut Jump</h1>
+            <p>Press SPACE to jump</p>
+            <button id="startBtn">Start</button>
+        </div>
+    </div>
+
+    <!-- Score Display -->
+    <div id="gameUI" style="display: none;">
+        <div class="score">Score: <span id="score">0</span></div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameOver" class="overlay" style="display: none;">
+        <div class="panel">
+            <h1>Game Over</h1>
+            <p>Score: <span id="finalScore">0</span></p>
+            <button id="restartBtn">Restart</button>
+        </div>
+    </div>
+
+    <script type="module" src="./src/script.js"></script>
+</body>
+
+</html>
